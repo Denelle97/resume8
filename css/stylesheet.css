@@ -1,0 +1,215 @@
+/* Style applied to  all H1 - my name only (Rem you cannot change the font size of headings(H1)) */
+h1 {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+/* Code for mobile devices smaller than 768px & DIV 1 */
+.Intro {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+.Intro {
+  font-size: 1.3vw;
+ }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+  .Intro {
+    font-size: 1.8vw;
+  }
+}
+
+/* this is where i need to made my image responsive */ 
+
+#MainPicture {
+
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 2px solid white;
+  
+}
+/*  My Menu Bar  */
+aside {
+ 
+  background-color: #C16E70;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+
+}
+/* everything except header, footer and side bar & DIV 2 & style for all devices smaller than 768px*/
+
+.maincontent {
+   padding-left: 1rem;
+  padding-right: 1rem; 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+.maincontent {
+  font-size: 1.3vw;
+ }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+  .maincontent {
+    font-size: 1.8vw;
+  }
+}
+/* creating space with out using <b> */
+h2 {
+  padding: 3px;
+}
+
+#education{
+  color: #C16E70;
+  font-weight: bolder;
+}
+
+#experience {
+  color: #C16E70;
+  font-weight: bolder;
+}
+
+/* adds effects to my skills ID */
+.skills {
+
+  color: #C16E70;
+  font-weight: bolder;
+}
+
+/* creating space between headings */
+h3 {
+  padding: 3px;
+  padding-bottom: 3px;
+}
+
+.main {
+
+display: flex;
+flex-direction: row;
+overflow: unset;
+
+}
+
+body{
+  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:110%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/backRoundPhoto.jpg");
+  background-color: #C16E70;
+  padding: 0%;
+  border: 0;
+  margin: 0;
+}
+
+article {
+  padding: 0;
+}
+header {
+  text-align: center;
+  background-color: #C16E70;
+  padding: 5px;
+  justify-content: center;
+  
+
+}
+/* effects apply to the entire footer */
+footer {
+  color: white;
+  background-color: #C16E70;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+ 
+}
+
+.background {
+
+  background-color: #f3d8d8;
+  background-image: url("../images/backGroundPhoto.jpg"); 
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  padding: 0%;
+  margin: 0%;
+} 
+
+/* poistion logo's */
+
+.position{
+  position: bottom;
+  padding-top: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+/* Styling my logo's only*/
+.fa {
+display: inline-block;
+width: 90px;
+height: 90px;
+background: #f1f1f1;
+margin: 10px;
+border-radius: 30%;
+box-shadow: 0 5px 15px -5px #00000070;
+color: #C16E70;
+overflow: hidden;
+position: relative;
+}
+
+.fa i{
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+
+.fa:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.fa::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #C16E70;  
+  /*background: #3498db; */
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.fa:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+/*amimating my logo's */ 
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
